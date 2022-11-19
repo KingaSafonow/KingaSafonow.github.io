@@ -1,25 +1,52 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <style>
       body {
-        text-align: center;
-        background: #ead9e1;
+        text-align: left;
+        background: rgb(212,199,99);
+        background: linear-gradient(
+          80deg,
+          rgba(212,199,99,1) 35%,
+          rgba(234,217,225,1) 35%,
+          rgba(234,210,220,1) 84%,
+          rgba(232,195,209,1) 84%,
+          rgba(232,190,206,1) 100%
+        );
         margin: 0;
-        position: absolute;
+        overflow: hidden;
+        font-family: "Roboto", sans-serif;
+      }
+      .about-item {
+        display: flex;
+        align-items: center;
+        justify-self: start;
+      }
+      .red-bg {
+        height: 20px;
+        background-color: white;
+        padding: 3px 9px;
+      }
+      .firstname {
+        font-size: 40px;
         font-family: "Dancing Script", sans-serif;
       }
-      p {
-        background-color: white;
-        padding: 2px 10px;
+      .about-me {
+        margin-left: 30px;
+        width: 400px;
       }
     </style>
   </head>
   <body>
-    <h1>Kinga Safonow</h1>
-    <h2>o mnie</h2>
-    <h2>Zainteresowania</h2>
-    <p>Interesuje się siakówką i jazdą na rolkach.</p>
-    <p>Lubię czytać ksiąki o psychologii.</p>
+
+    <div class="about-me">
+      <p class="hello"><span class="red-bg">Cześć, nazywam się <span class="firstname">Kinga!</span></span></p>
+      <p class="about-item"><span class="red-bg">o mnie:</span></p>
+      <p class="about-item"><span class="red-bg">uczęszczam do szkoły podstawowej nr 16</span></p>
+      <p class="about-item"><span class="red-bg">moje zainteresowania to:</span></p>
+      <p class="about-item"><span class="red-bg">siakówka i jazda na rolkach</span></p>
+      <p class="about-item"><span class="red-bg">lubię też czytać książki o psychologii</span></p>
+    </div>
   </body>
 </html>
